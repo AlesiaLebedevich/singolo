@@ -1,0 +1,232 @@
+@font-face {
+    font-family: Lato-Black;
+    src: url('singolo2/assets/fonts/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url('singolo2/assets/fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url('singolo2/assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url('singolo2/assets/fonts/Lato-Light.ttf');
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+.wrapper {
+    width: 1020px;
+    margin: auto;
+}
+  
+.quote-main {
+    padding-left: 40px;
+    padding-top: 35px;
+    padding-bottom: 68px;
+    background-color: #f06c64;
+    border-bottom: 7px solid #ea676b;
+}
+  
+.quote-title {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: "Lato-Black", sans-serif;
+    color: #f0d8d9;
+}
+  
+.quote-text {
+    width: 939px;
+    margin-top: -7px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: -0.1px;
+    font-family: "Lato-Regular", sans-serif;
+    color: #f0d8d9;
+}
+  
+.quote-block {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    padding-top: 25px;
+}
+  
+.quote-form {
+    width: 619px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.quote-form input:not(:first-child) {
+    margin-top: 16px;
+ }
+  
+.quote-form input {
+    height: 38px;
+    border: none;
+    background-color: #d6564f;
+    border-radius: 5px;
+}
+  
+.quote-form textarea {
+    height: 154px;
+    padding-top: 8px;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    margin-top: 16px;
+    margin-bottom: -2px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Lato-Regular", sans-serif;
+    background-color: #d6564f;
+    resize: none;
+    color: #f48c8f;
+    border: none;
+    border-radius: 5px;
+}
+  
+.quote-form input::placeholder,
+  textarea::placeholder {
+    color: #f48c8f;
+}
+  
+  
+.quote-form input[type="text"] {
+    height: 36px;
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: "Lato-Regular", sans-serif;
+    color: #f48c8f;
+}
+  
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+}
+
+.contact-title {
+    margin-top: 1px;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+    font-family: "Lato-Bold", sans-serif;
+    text-align: left;
+    color: #f0d1d1; 
+}
+
+.contact-block {
+    margin-top: 10px;
+    letter-spacing: 0.3px;
+}
+
+.contact-text {
+    width: 301px;
+    margin-top: -9px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.4px;
+    font-family: "Lato-Regular", sans-serif;
+    text-align: left;
+    color: #f0d1d1;
+    transition: color;
+}
+
+.contact-link a {
+    display: flex;
+    text-decoration: none;
+}
+
+.contact-link p:hover {
+    color: #fff;
+}
+
+.location img {
+    width: 7px;
+    height: 11px;
+    padding: 5px 13px 0 4px;
+}
+
+.contact-link p {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21.56px;
+    letter-spacing: 0.3px;
+    font-family: Lato;
+    color: #f0d8d9;
+}
+
+.tel img {
+    width: 12px;
+    height: 12px;
+    padding: 4px 12px 0 0;
+}
+
+.mail img {
+    width: 13px;
+    height: 8px;
+    padding: 7px 11px 0 0;
+}
+
+/*footer*/
+
+footer {
+    position: relative;
+    width: 1020px;
+    height: 76px;
+    margin: auto;
+    background-color:#2d303a;
+}
+
+footer h3 {
+    display: inline-block;
+    padding: 31px 43px;
+    margin: 0px;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    font-family: "Lato-Regular", sans-serif;
+    color: #666d89;
+}
+
+#container-social {
+    display: inline-block; 
+    position: absolute;
+    right:39px;
+    top:21px;
+}
+
+#container-social a {
+    text-decoration: none;
+}
+
+.social-links {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    padding: 7px 0 0 7px;
+    margin-left: 4px;
+    text-decoration: none;
+    border: solid 1px #666d89;
+    border-radius: 50%;
+    transition: background-color;
+}
+
+.social-links:hover {
+    background-color:#f0d8d9;
+}
