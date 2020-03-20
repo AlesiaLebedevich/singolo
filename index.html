@@ -8,33 +8,34 @@
   <meta name="description" content="singolo">
   <meta name="keywords" content="javascript, html, css, front-end, developer">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <title>singolo</title>
 </head>
 
 <body>
     <div class= "wrapper">
-    <header class="header">
+    <header class="header" id="header">
         <div class="logo">
         <h1>singolo<span>*</span></h1>
         </div>
         <nav class="navigation-header">
-            <ul>
-                <li><a href = "#">home</a></li>
-                <li><a href = "#">services</a></li>
-                <li><a href = "#">portfolio</a></li>
-                <li><a href = "#">about</a></li>
-                <li><a href = "#">contact</a></li>
+            <ul id="menu">
+                <li class="menu_link"><a class="menu-link active" href ="#home">home</a></li>
+                <li class="menu_link"><a class="menu-link" href = "#services">services</a></li>
+                <li class="menu_link"><a class="menu-link" href = "#portfolio">portfolio</a></li>
+                <li class="menu_link"><a class="menu-link" href = "#about">about</a></li>
+                <li class="menu_link"><a class="menu-link" href = "#contact">contact</a></li>
             </ul>
         </nav>
     </header>
-        <section class="slider">
-            <img class="previous" src="assets/slider/chevleft.png" alt="previous">
+        <section class="slider" id="slider">
+            <div id="slides">
+            <img class="previous" id="previous" src="assets/slider/chevleft.png" alt="previous">
             <img class="phonevertical" src="assets/slider/Slice_1.png" alt="phoneVertical">
             <img class="phonehorizontal" src="assets/slider/Slice_2.png" alt="phoneHorizontal">
-            <img class="next" src="assets/slider/chevright.png" alt="next">  
+            <img class="next" id="next" src="assets/slider/chevright.png" alt="next"> 
+            </div> 
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class = "services_title">
               <h2>Our Services</h2>
               <p class="services_text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, 
@@ -85,35 +86,35 @@
                 </div>
             </div>
         </section>
-        <div class="portfolio-body">
+        <div class="portfolio-body" id="portfolio">
             <div class="portfolio-header">
             <h2 class="portfolio-title"><a href="#">Portfolio</a></h2>
             <p class="portfolio-text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-            <nav class="portfolio-navigation">
-            <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">Artwork</a></li>
+            <nav class="portfolio-navigation" id="portfolio-navigation">
+            <ul class="portfolio-navigation-item" id="portfolio-navigation-item">
+                <li><a class="portfolio-navigation_item portfolio_active" onclick="shuffleImg()" href="#portfolio">All</a></li>
+                <li><a class="portfolio-navigation_item" onclick="shuffleImg()" href="#portfolio">Web Design</a></li>
+                <li><a class="portfolio-navigation_item" onclick="shuffleImg()" href="#portfolio">Graphic Design</a></li>
+                <li><a class="portfolio-navigation_item" onclick="shuffleImg()" href="#portfolio">Artwork</a></li>
             </ul>
             </nav>
         </div>
-        <section class="portfolio-image">
-            <img class="first_img" src="assets/img/project8.png" alt="one_img">
-            <img class="second_img" src="assets/img/project7.png" alt="two_img">
-            <img class="third_img" src="assets/img/layer9.png" alt="three_img">
-            <img class="fourth_img" src="assets/img/project6.png" alt="four_img">
-            <img class="fifth_img" src="assets/img/project5.png" alt="five_img">
-            <img class="sixth_img" src="assets/img/project4.png" alt="six_img">
-            <img class="seventh_img" src="assets/img/layer11.png" alt="seven_img">
-            <img class="eighth_img" src="assets/img/layer8.png" alt="eight_img">
-            <img class="ninth_img" src="assets/img/project3.png" alt="nine_img">
-            <img class="tenth_img" src="assets/img/project2.png" alt="ten_img">
-            <img class="eleventh_img" src="assets/img/project1.png" alt="eleven_img">
-            <img class="twelfth_img" src="assets/img/project.png" alt="twelve_img">
-        </section>  
+        <div class="portfolio-image" id="portfolio-image">
+            <div class="image"><img src="assets/img/one.png" alt="one_img"></div>
+            <div class="image"><img  src="assets/img/two.png" alt="two_img"></div>
+            <div class="image"><img src="assets/img/three.png" alt="three_img"></div>
+            <div class="image"><img src="assets/img/four.png" alt="four_img"></div>
+            <div class="image"><img src="assets/img/five.png" alt="five_img"></div>
+            <div class="image"><img src="assets/img/six.png" alt="six_img"></div>
+            <div class="image"><img src="assets/img/seven.png" alt="seven_img"></div>
+            <div class="image"><img src="assets/img/eight.png" alt="eight_img"></div>
+            <div class="image"><img src="assets/img/nine.png" alt="nine_img"></div>
+            <div class="image"><img src="assets/img/ten.png" alt="ten_img"></div>
+            <div class="image"><img src="assets/img/eleven.png" alt="eleven_img"></div>
+            <div class="image"><img src="assets/img/twelve.png" alt="twelve_img"></div>
+        </div>  
         </div>
-        <div class="container-item">
+        <div class="container-item" id="about">
             <div class="text-item">
             <h2>About Us</h2>
             <p>
@@ -169,13 +170,26 @@
                 dapibus,
                 tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="quote-block">
-                <form action="" class="quote-form">
-                    <input type="text" placeholder="Name (Required)" required>
-                    <input type="text" placeholder="Email (Required)" required>
-                    <input type="text" placeholder="Subject">
-                    <textarea name="" id="" cols="30" rows="10"
+                <form class="quote-form" id="contact">
+                    <input type="text" id="name" placeholder="Name (Required)" required>
+                    <input type="email" id="email" placeholder="Email (Required)" required>
+                    <input class="subject-text" id="subject-text" type="text" placeholder="Subject">
+                    <textarea class="textarea-text" id="textarea-text" cols="30" rows="10"
                         placeholder="Describe your project in detail..."></textarea>
+                    <div class="submit">
+                    <button class="quote-form_button" id="button" type="submit" value="Submit">Submit</button>
+                    </div>
                 </form>
+                <div id="message_block" class="message_block hidden">
+                    <div id="message">
+                        <p>Письмо отправлено</p>
+                        <br>
+                        <p>Тема: <span id="result_subject"></span></p>
+                        <br>
+                        <p>Описание: <span id="result_describe"></span></p>
+                        <button id="close_btn">OK</button>
+                    </div>
+                </div>
                 <div class="contact-information">
                     <h3 class="contact-title">Contact Information</h3>
                     <p class="contact-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viver-<br>
@@ -251,5 +265,6 @@
         </div>
     </footer>
 </div> 
+<script src="script.js"></script>
 </body>
 </html>
