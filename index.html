@@ -14,11 +14,14 @@
 <body>
     <div class= "wrapper">
     <header class="header" id="header">
+       <div class="hamburger">
+            <svg class="svg" width="35" height="35" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M16 13H2v1h14v-1zm0-5H2v1h14V8zm0-5H2v1h14V3z" fill-rule="nonzero" fill-opacity="1" fill="#fff" stroke="none"></path></svg>
+        </div>
         <div class="logo">
         <h1>singolo<span>*</span></h1>
         </div>
         <nav class="navigation-header">
-            <ul id="menu">
+            <ul class="menu" id="menu">
                 <li class="menu_link"><a class="menu-link active" href ="#home">home</a></li>
                 <li class="menu_link"><a class="menu-link" href = "#services">services</a></li>
                 <li class="menu_link"><a class="menu-link" href = "#portfolio">portfolio</a></li>
@@ -27,13 +30,26 @@
             </ul>
         </nav>
     </header>
+    <div class="hamburger-menu">
+        <div class="hamburger-header">
+            <div class='hamburger_active'>
+                <svg class="svg" width="35" height="35" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M16 13H2v1h14v-1zm0-5H2v1h14V8zm0-5H2v1h14V3z" fill-rule="nonzero" fill-opacity="1" fill="#fff" stroke="none"></path></svg>
+            </div>
+            <h2 id="mini_singolo"><a href="#">SINGOLO<span>*</span></a></h2>
+        </div>
+        <ul class="menu_active" id="menu_active">
+            <li class="menu_link"><a class="menu-link active" href ="#home">home</a></li>
+            <li class="menu_link"><a class="menu-link" href = "#services">services</a></li>
+            <li class="menu_link"><a class="menu-link" href = "#portfolio">portfolio</a></li>
+            <li class="menu_link"><a class="menu-link" href = "#about">about</a></li>
+            <li class="menu_link"><a class="menu-link" href = "#contact">contact</a></li>
+        </ul>
+    </div>
         <section class="slider" id="slider">
             <div class="item-container">
                 <div class="item-element slider-active">
                     <div class="slider-1">
                         <img class="slider1" src="assets/slider/slider-1.png" alt="">
-            <!--<img class="phonevertical" src="assets/slider/Slice_1.png" alt="phoneVertical">
-            <img class="phonehorizontal" src="assets/slider/Slice_2.png" alt="phoneHorizontal">-->
                     </div> 
                 </div>
                 <div class="item-element">
